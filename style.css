@@ -1926,7 +1926,12 @@ textarea.custom-input {
     }
 
     .contact-info {
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .info-box {
+        width: 100%;
+        text-align: left;
     }
 
     .contact-form-wrapper {
