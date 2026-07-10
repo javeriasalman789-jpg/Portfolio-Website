@@ -409,6 +409,10 @@ section {
 
     }
 
+    .title-line {
+        margin-top: 0;
+    }
+
     .about-heading {
 
         font-size: 28px;
@@ -1931,6 +1935,7 @@ textarea.custom-input {
 
     .info-box {
         width: 100%;
+        justify-content: flex-start;
         text-align: left;
     }
 
