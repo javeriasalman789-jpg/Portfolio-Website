@@ -130,7 +130,7 @@ section {
     .image-container {
         justify-content: flex-end;
         padding-left: 80px;
-        /* Increase to 100px or 120px if needed */
+
     }
 }
 
@@ -200,8 +200,8 @@ section {
 
     .profile-ring {
 
-        width: 240px;
-        height: 240px;
+        width: 320px;
+        height: 320px;
 
     }
 
