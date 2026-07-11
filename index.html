@@ -1078,6 +1078,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
+        var typed = new Typed(".text", {
+            strings: ["Full-Stack Developer", "Machine Learner Enthusiast", "Python Developer", "Problem Solver"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+        function openCertificate(pdfPath) {
+
+            document.getElementById("certificateFrame").src = pdfPath;
+
+            const modal = new bootstrap.Modal(
+                document.getElementById("certificateModal")
+            );
+
+            modal.show();
+        }
+
+        document.getElementById("certificateModal").addEventListener("hidden.bs.modal", function () {
+            document.getElementById("certificateFrame").src = "";
+        });
         emailjs.init("eEceEhwDl-LeGdQtb");
 
         const form = document.getElementById("contactForm");
