@@ -1075,6 +1075,30 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Your JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("eEceEhwDl-LeGdQtb");
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // Validation...
+
+            await emailjs.send("service_z6oga5r", "template_k6hts47", {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            });
+
+            alert("Message sent successfully!");
+            form.reset();
+        });
+    </script>
     <script src="main.js"></script>
 
 </body>
